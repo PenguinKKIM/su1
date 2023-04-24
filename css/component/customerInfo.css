@@ -1,0 +1,94 @@
+.customer_info{
+    width: 100%;
+
+    margin-top: 3%;
+
+    padding: 1%;
+}
+
+.customer_info-grid{
+    display: grid;
+    
+    gap: 6px;    
+      
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10rem 10rem 10rem;
+
+    border-radius: 10px;
+
+}
+
+.customer_info-grid>div{
+  
+    border-radius: 10px;
+
+    background-color: rgba(211, 211, 211, .5);
+   
+    display: flex;
+    align-items: center;
+}
+
+.customer_prize_money{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_prize_money:first-child{
+    font-size: 1.5rem;
+}
+
+.prized_money{
+    margin-top: 2%;
+    
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.customer_info-reward{
+    justify-content: center;
+}
+
+.customer_info-result{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    justify-content: center;
+}
+
+.customer_info-latest-num{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.customer_lottery_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customer_lottery_logo>img{
+    width: 12rem;
+}
+.customer_info-latest-num>span{
+    font-size: 1.3rem;
+    
+}
+
+.customer_info-qna{
+
+    justify-content: center;
+}
+
+.customer_info-cs{
+
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+
+
+@import 'reset.css';
+@import 'variables.css';
+
+
+@import 'screen/mainHome.css';
+
+
+@import 'component/titleNav.css';
+@import 'component/lotteryInfo.css';
+@import 'component/customerInfo.css';
+@import 'component/bottonBoard.css';
+
+@import 'media.css';
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+

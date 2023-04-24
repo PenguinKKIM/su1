@@ -1,0 +1,100 @@
+.suertel-home_main,.lottery_info{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.lottery_info{
+    justify-content: center;
+}
+
+.suertel-home_main{
+    width: 75%;
+    
+    flex-direction: column;
+    padding: 1px;
+}
+
+.million_info,.powerBall_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 30rem;
+    margin: 1rem;
+
+    border-radius: 10px;
+}
+
+.million_info>span>img,.powerBall_info>span>img{
+    width: 100%;
+    height: 80%;
+}
+
+.lottery_logo_img{
+    margin-top: 3%;
+    border-bottom: .2rem solid rgba(220, 220, 220, .2);
+}
+
+.million_info{
+    background-color: var(--magaM-blue);
+}
+
+.powerBall_info{
+    background-color: var(--powerBall-gray);
+}
+
+.million_info_date,.powerBall_info_date{
+    margin-top: var(--magin-top1per);
+    
+    font-size: 150%;
+    color: aliceblue;
+}
+
+.million_info_money,.powerBall_info_money{
+    margin: .5% 0;
+    padding: 1%;
+    font-size: 300%;
+    font-weight: 900;
+    color: var(--powerBall-yellow);
+}
+
+.million_info_time,.powerBall_info_time{
+    display: block;
+    font-weight: 900;
+}
+
+.lottery_info_time{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+    width: 25rem;
+    height: 20%;
+    background-color: rgba(220, 220, 220, .7);
+
+    border-radius: 20px;
+
+    margin-top: 2%;
+    padding: 1px;
+
+    font-size: 2rem;
+}
+
+
+.lottery_info_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 25rem;
+    height: 15%;
+    background-color: rgba(253, 205, 32);
+
+    border-radius: 20px;
+
+    margin: 2%;
+
+    font-size: 2rem;
+    font-weight: 800;
+}

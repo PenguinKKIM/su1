@@ -1,0 +1,58 @@
+@media (max-width: 800px){
+    .home-title_navLogo{
+    flex-direction: column;
+    }
+    .home-title_nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-title_nav>span{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .home-title_nav>span:hover{
+        background-color: cornflowerblue;
+    }
+    .suertel-home_main{
+        width: 100vw;
+        margin-top: 5%;
+        align-items: center;
+    }
+    .lottery_info{
+        width: 85vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .million_info,.powerBall_info{
+        width: 30rem;
+        height: 30rem;
+    }
+    .lottery_info_time>span{
+        padding: 5px;
+
+        font-size: 4.5vw;
+    }
+    .lottery_info_btn{
+        padding: 5px;
+        font-size: 4.5vw;
+    }
+    .customer_info{
+        width: 85vw;
+    }
+    .customer_info-grid{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+    .customer_info-grid>div{
+        height: 5rem;
+
+        margin-top: 1%;
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,378 @@
+/**vars*/
+:root{
+    --main-header_blue : rgb(5, 0, 73);
+
+    --powerBall-gray : #080044;
+    --powerBall-red : #e30c07;
+    --powerBall-yellow : #fdcd20;
+
+    --magaM-red : #e13a2b;
+    --magaM-blue : #477dbb;
+    --magaM-yellow : #fede01;
+}
+
+:root{
+    --magin-top1per : 1%;
+}
+
+/**reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+/**홈화면 타이틀네비*/
+.title-loginOut{
+    margin-left: 1rem;
+}
+
+.title-loginOut>span{
+    margin-right: .5rem;
+    padding: .2rem .8rem;
+    border-radius: 10px;
+
+    font-weight: 700;
+    color: var(--main-header_blue);
+    
+    background-color: rgb(195, 195, 195);
+}
+
+.title-loginOut>span:hover{
+    color: aliceblue;
+    background-color: cornflowerblue;
+}
+
+.home-title{
+    width: inherit;
+    
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    border-bottom: .1rem solid rgb(220, 220, 220);
+}
+
+.home-title-loginOut{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**메인네비*/
+.home-title_navLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: var(--magin-top1per);
+}
+
+.home-title_navLogo>img{
+    width: 20rem;
+}
+
+.home-title_nav>span{
+    margin: 1rem;
+}
+
+.title_nav_com{
+    font-weight: 900;
+}
+
+.suertel-home_main,.lottery_info{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.lottery_info{
+    justify-content: center;
+}
+
+/**메인섹션*/
+.suertel-home_main{
+    width: 75%;
+    
+    flex-direction: column;
+    padding: 1px;
+}
+/**복권정보*/
+.million_info,.powerBall_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    
+    width: 50%;
+    height: 30rem;
+    margin: 1rem;
+
+    border-radius: 10px;
+}
+
+.million_info>span>img,.powerBall_info>span>img{
+    width: 100%;
+    height: 80%;
+}
+
+.lottery_logo_img{
+    margin-top: 3%;
+    border-bottom: .2rem solid rgba(220, 220, 220, .2);
+}
+
+.million_info{
+    background-color: var(--magaM-blue);
+}
+
+.powerBall_info{
+    background-color: var(--powerBall-gray);
+}
+
+.million_info_date,.powerBall_info_date{
+    margin-top: var(--magin-top1per);
+    
+    font-size: 150%;
+    color: aliceblue;
+}
+
+.million_info_money,.powerBall_info_money{
+    margin: .5% 0;
+    font-size: 300%;
+    font-weight: 900;
+    color: var(--powerBall-yellow);
+}
+
+.million_info_time,.powerBall_info_time{
+    font-weight: 900;
+}
+
+.lottery_info_time{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+    width: 70%;
+    height: 20%;
+    background-color: rgba(220, 220, 220, .7);
+
+    border-radius: 20px;
+
+    margin-top: 2%;
+    padding: 1%;
+
+    font-size: 200%;
+}
+
+
+.lottery_info_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70%;
+    height: 15%;
+    background-color: rgba(253, 205, 32);
+
+    border-radius: 20px;
+
+    margin: 2%;
+
+    font-size: 150%;
+    font-weight: 800;
+}
+
+/**고객정보게시판*/
+.customer_info{
+    width: 100%;
+
+    margin-top: 3%;
+
+    padding: 1%;
+}
+
+.customer_info-grid{
+    display: grid;
+
+    gap: 5px;    
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10rem 10rem 10rem;
+
+}
+
+.customer_info-grid>div{
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, .5);
+    display: flex;
+    align-items: center;
+}
+
+.customer_prize_money{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_prize_money:first-child{
+    font-size: 1.5rem;
+}
+
+.prized_money{
+    margin-top: 2%;
+    
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.customer_info-reward{
+    justify-content: center;
+}
+
+.customer_info-result{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    justify-content: center;
+}
+
+.customer_info-latest-num{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.customer_lottery_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customer_lottery_logo>img{
+    width: 12rem;
+}
+.customer_info-latest-num>span{
+    font-size: 1.3rem;
+    
+}
+
+.customer_info-qna{
+    background-color: aqua;
+    justify-content: center;
+}
+
+.customer_info-cs{
+    background-color: aqua;
+    justify-content: center;
+}
+
+/**공지사항 당첨안내*/
+.bottom_board{
+    width: 100%;
+
+    margin-top: 3%;
+
+    padding: 1%;
+}
+
+.bottom_board-grid{
+    display: grid;
+    
+    gap:5px;    
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20rem;    
+}
+
+.bottom_board-grid>div{
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, .5);
+}
+
+.bottom_board-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bottom_board-board_notice{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid rgba(100, 148, 237, 0.491);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.bottom_board-board_write{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-overflow: ellipsis;
+}
+
+.bottom_board-board_write>span{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+
+.board-user_name{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}

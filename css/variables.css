@@ -1,0 +1,15 @@
+:root{
+    --main-header_blue : rgb(5, 0, 73);
+
+    --powerBall-gray : #080044;
+    --powerBall-red : #e30c07;
+    --powerBall-yellow : #fdcd20;
+
+    --magaM-red : #e13a2b;
+    --magaM-blue : #477dbb;
+    --magaM-yellow : #fede01;
+}
+
+:root{
+    --magin-top1per : 1%;
+}
