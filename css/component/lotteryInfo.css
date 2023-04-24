@@ -22,6 +22,7 @@
 
     height: 30rem;
     margin: 1rem;
+    padding: 1rem;
 
     border-radius: 10px;
 }
@@ -75,7 +76,7 @@
 
     border-radius: 20px;
 
-    margin-top: 2%;
+    margin: 2%;
     padding: 1px;
 
     font-size: 2rem;

@@ -20,22 +20,20 @@
         align-items: center;
     }
     .lottery_info{
-        width: 85vw;
+        width: 90%;
         flex-direction: column;
         align-items: center;
     }
     .million_info,.powerBall_info{
-        width: 30rem;
         height: 30rem;
     }
     .lottery_info_time>span{
         padding: 5px;
-
-        font-size: 4.5vw;
+        font-size: 2rem;
     }
     .lottery_info_btn{
         padding: 5px;
-        font-size: 4.5vw;
+        font-size: 2rem;
     }
     .customer_info{
         width: 85vw;
